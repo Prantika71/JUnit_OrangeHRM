@@ -61,12 +61,12 @@ public class OrangeHRM {
         List<WebElement> Datebtn = driver.findElements(By.cssSelector("[placeholder=\"yyyy-dd-mm\"]"));
 
        // Datebtn.get(0).click();
-        Datebtn.get(0).sendKeys("2025-08-29");
+        Datebtn.get(0).sendKeys("2025-09-03");
 
         //Datebtn.get(1).click();
         Datebtn.get(1).sendKeys(Keys.CONTROL + "a");
         Datebtn.get(1).sendKeys(Keys.BACK_SPACE);
-        Datebtn.get(1).sendKeys("2025-08-30");
+        Datebtn.get(1).sendKeys("2025-09-04");
 
         // Select Apply btn
 
@@ -76,10 +76,10 @@ public class OrangeHRM {
 
     }
 
-    @AfterAll
-    public void closeDriver() {
-
-        // driver.quit();
-    }
+//    @AfterAll
+//    public void closeDriver() {
+//
+//        driver.quit();
+//    }
 
 }
