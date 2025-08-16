@@ -60,9 +60,6 @@ Automation scripts are written using:
 
 ---
 
-## Folder Structure
-
----
 
 ## How to Run Automation
 1. Clone the repository
