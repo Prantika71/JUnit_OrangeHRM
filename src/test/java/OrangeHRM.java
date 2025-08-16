@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -26,20 +27,12 @@ public class OrangeHRM {
 
     }
 
-//    @Test
-//    public void Login() throws InterruptedException {
-//
-//        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-//        driver.findElement(By.name("username")).sendKeys("Admin");
-//        driver.findElement(By.name("password")).sendKeys("admin123");
-//
-//
-//        driver.findElement(By.cssSelector("[type=submit]")).click();
-//
-//    }
 
     @Test
     public void ApplyLeave() throws InterruptedException {
+
+
+        //Login
 
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.findElement(By.name("username")).sendKeys("Admin");
@@ -48,27 +41,45 @@ public class OrangeHRM {
 
         driver.findElement(By.cssSelector("[type=submit]")).click();
 
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/leave/applyLeave");
+        //Navigate to Leave
+
+        driver.findElement(By.xpath("//a[contains(@href,'viewLeaveModule')]")).click();
+
+        //Navigate to ApplyLeave
+
+        driver.findElement(By.xpath("//a[contains(text(),'Apply')]")).click();
 
 
         driver.findElement(By.className("oxd-select-text-input")).click();
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.ARROW_DOWN).perform();
+        actions.sendKeys(Keys.ARROW_DOWN).perform();
         actions.sendKeys(Keys.ENTER).perform();
 
-        //From Date
+        //Date
 
         List<WebElement> Datebtn = driver.findElements(By.cssSelector("[placeholder=\"yyyy-dd-mm\"]"));
 
-        Datebtn.get(0).click();
+       // Datebtn.get(0).click();
+        Datebtn.get(0).sendKeys("2025-08-29");
 
-       List<WebElement> FromDatebtn=  driver.findElements(By.className("oxd-input"));
-       FromDatebtn.get(1).click();
+        //Datebtn.get(1).click();
+        Datebtn.get(1).sendKeys(Keys.CONTROL + "a");
+        Datebtn.get(1).sendKeys(Keys.BACK_SPACE);
+        Datebtn.get(1).sendKeys("2025-08-30");
 
-       Datebtn.get(1).click();
-       FromDatebtn.get(2).click();
+        // Select Apply btn
+
+        driver.findElement(By.cssSelector("[type=submit]")).click();
 
 
+
+    }
+
+    @AfterAll
+    public void closeDriver() {
+
+        // driver.quit();
     }
 
 }
