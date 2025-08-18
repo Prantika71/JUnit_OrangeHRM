@@ -77,5 +77,5 @@ git clone <https://github.com/Prantika71/JUnit_OrangeHRM>
 
 
 #### Report
-![Report](https://github.com/user-attachments/assets/7b90b9f7-476d-4c63-8155-fa866868096a)
+![Report]("https://github.com/user-attachments/assets/ef06adc1-cc49-4c0b-8937-14c3e421183b)
 
