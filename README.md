@@ -71,3 +71,10 @@ git clone <https://github.com/Prantika71/JUnit_OrangeHRM>
 3. Add Dependency in the build.gradle file and reload gradle from the top right
    - Dependencies Add:
      - [Selenium Java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.35.0)
+    
+## Project Reports
+### 1. Webform Automation for OrgangeHRM
+
+#### Report
+![image](<img width="987" height="412" alt="image" src="https://github.com/user-attachments/assets/5f8b8ecc-d47f-4ae3-84c3-b7b04728e73d" />
+)
