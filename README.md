@@ -75,6 +75,7 @@ git clone <https://github.com/Prantika71/JUnit_OrangeHRM>
 ## Project Reports
 ### 1. Webform Automation for OrgangeHRM
 
+
 #### Report
-![image](<img width="987" height="412" alt="image" src="https://github.com/user-attachments/assets/5f8b8ecc-d47f-4ae3-84c3-b7b04728e73d" />
-)
+![Report](https://github.com/user-attachments/assets/7b90b9f7-476d-4c63-8155-fa866868096a)
+
